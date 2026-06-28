@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 数字时钟显示 -->
+    <TextView
+        android:id="@+id/tv_digital_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingVertical="32dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="爻阵闹钟"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="#9E9E9E" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alarm_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btn_add_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ 添加闹钟"
+        android:textSize="18sp"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
